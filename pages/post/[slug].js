@@ -59,7 +59,7 @@ const Index = ({ post }) => {
                             <BlockContent
                                 blocks={post.body}
                                 dataset="production"
-                                projectId="7gx68era"
+                                projectId="h553qvzh"
                             />
                         </article>
                     </div>
