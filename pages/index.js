@@ -57,7 +57,7 @@ export default function Home({ post }) {
 
 export const getStaticProps = async () => {
     const query = encodeURIComponent(`*[ _type == "post" ]`);
-    const url = `https://${process.env.SANITY_KEY}.api.sanity.io/v1/data/query/production?query=${query}`;
+    const url = `https://h553qvzh.api.sanity.io/v1/data/query/production?query=${query}`;
     const results = await fetch(url).then((res) => res.json());
     const post = await results.result;
     console.log(post);

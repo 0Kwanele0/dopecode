@@ -83,7 +83,7 @@ export const getStaticProps = async (context) => {
     const query = encodeURIComponent(
         `*[ _type == "post" && slug.current == "${pageSlug}" ]`
     );
-    const url = `https://${process.env.SANITY_KEY}.api.sanity.io/v1/data/query/production?query=${query}`;
+    const url = `https://h553qvzh.api.sanity.io/v1/data/query/production?query=${query}`;
     const results = await fetch(url).then((res) => res.json());
     const post = results.result[0];
 
@@ -102,7 +102,7 @@ export const getStaticProps = async (context) => {
 
 export const getStaticPaths = async () => {
     const query = encodeURIComponent(`*[ _type == "post" ]`);
-    const url = `https://${process.env.SANITY_KEY}.api.sanity.io/v1/data/query/production?query=${query}`;
+    const url = `https://h553qvzh.api.sanity.io/v1/data/query/production?query=${query}`;
     const results = await fetch(url).then((res) => res.json());
     const post = results.result;
 

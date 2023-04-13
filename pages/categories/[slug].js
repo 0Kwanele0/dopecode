@@ -12,7 +12,7 @@ export default function Home({ selected }) {
     useEffect(() => {
         if (post.length) {
             const imgBuilder = ImageUrlBuilder({
-                projectId: `${process.env.SANITY_KEY}`,
+                projectId: "h553qvzh",
                 dataset: "production",
                 apiVersion: "2021-10-21",
                 useCdn: true,
@@ -63,7 +63,7 @@ export default function Home({ selected }) {
 
 export const getStaticProps = async (context) => {
     const query = encodeURIComponent(`*[ _type == "post" ]`);
-    const url = `https://${process.env.SANITY_KEY}.api.sanity.io/v1/data/query/production?query=${query}`;
+    const url = `https://h553qvzh.api.sanity.io/v1/data/query/production?query=${query}`;
     const results = await fetch(url).then((res) => res.json());
     const post = results.result;
     const selected = post.filter((item) => {
