@@ -8,7 +8,7 @@ const Index = ({ post }) => {
     const [fixedImage, setfixedImage] = useState();
     useEffect(() => {
         const imgBuilder = ImageUrlBuilder({
-            projectId: process.env.SANITY_KEY,
+            projectId: "h553qvzh",
             dataset: "production",
             apiVersion: "2021-10-21",
             useCdn: true,
