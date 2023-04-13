@@ -1,0 +1,20 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+.container button {
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 8px 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.container button:hover {
+    opacity: 0.6;
+}

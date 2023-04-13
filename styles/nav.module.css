@@ -1,0 +1,65 @@
+.container {
+  padding: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+.navigatorBig {
+  display: flex;
+}
+.navigatorBig a {
+  margin: 0px 20px;
+}
+
+.navigator {
+  display: none;
+}
+.navigator a {
+  margin: 20px;
+}
+.logo {
+  color: rgb(0, 0, 0);
+}
+.logo a {
+  font-size: 19px;
+  margin: 0;
+}
+.logo span {
+  color: rgb(97, 49, 209);
+}
+.iconCont {
+  display: none;
+}
+.icon {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 995px) {
+  .container {
+    padding: 20px;
+  }
+  .navigatorBig {
+    display: none;
+  }
+  .navigator {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    z-index: 2;
+    top: 78px;
+    background-color: rgb(238, 239, 252);
+    width: 70vw;
+    padding: 20px 40px;
+    height: 90vh;
+    transform: translateX(90vw);
+  }
+
+  .iconCont {
+    display: block;
+  }
+}
